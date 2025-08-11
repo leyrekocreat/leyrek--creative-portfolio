@@ -1,34 +1,243 @@
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
+/* Import retro gaming fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+.App {
+  min-height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
+/* Custom pixel-style font */
+.pixel-font {
+  font-family: 'Orbitron', monospace;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0px rgba(0,0,0,0.3);
 }
 
-.App-header {
-    background-color: #0f0f10;
-    min-height: 100vh;
-    display: flex;
+/* Clean body font */
+body {
+  font-family: 'Rajdhani', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.portfolio-container {
+  scroll-behavior: smooth;
+}
+
+/* Retro button styles */
+.retro-btn {
+  position: relative;
+  transition: all 0.2s ease;
+  text-shadow: 1px 1px 0px rgba(0,0,0,0.5);
+}
+
+.retro-btn:hover {
+  filter: brightness(1.2);
+  transform: translateY(-2px);
+}
+
+/* Portfolio card hover effects */
+.portfolio-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.portfolio-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.2);
+}
+
+/* Mario-style transition effect */
+.mario-transition {
+  animation: marioSweep 0.8s ease-in-out;
+  transform-origin: center;
+}
+
+@keyframes marioSweep {
+  0% {
+    transform: scale(1) rotateY(0deg);
+    opacity: 1;
+  }
+  25% {
+    transform: scale(0.8) rotateY(-45deg);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(0.6) rotateY(-90deg);
+    opacity: 0.3;
+  }
+  75% {
+    transform: scale(0.8) rotateY(-135deg);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1) rotateY(-180deg);
+    opacity: 1;
+  }
+}
+
+/* Pixel-style borders */
+.pixel-border {
+  box-shadow: 
+    inset -2px -2px 0px rgba(0,0,0,0.2),
+    inset 2px 2px 0px rgba(255,255,255,0.2),
+    0 0 0 2px #000;
+}
+
+/* Mario-style ground */
+.mario-ground {
+  background-image: 
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 20px,
+      rgba(0,0,0,0.1) 20px,
+      rgba(0,0,0,0.1) 22px
+    );
+}
+
+/* Pipe styling */
+.pipe {
+  background: linear-gradient(to bottom, #4ade80, #22c55e);
+  border: 3px solid #000;
+  box-shadow: inset -3px -3px 0px rgba(0,0,0,0.3);
+}
+
+/* Coin animation */
+.coin {
+  background: radial-gradient(circle, #fbbf24, #f59e0b);
+  border: 3px solid #000;
+  animation: coinSpin 2s linear infinite;
+}
+
+@keyframes coinSpin {
+  0% { transform: rotateY(0deg); }
+  50% { transform: rotateY(90deg) scale(0.8); }
+  100% { transform: rotateY(180deg); }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e293b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #3b82f6, #1d4ed8);
+  border-radius: 6px;
+  border: 2px solid #1e293b;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #60a5fa, #2563eb);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .pixel-font {
+    font-size: 0.8em;
+  }
+  
+  .portfolio-card {
+    margin-bottom: 1rem;
+  }
+  
+  nav .container {
     flex-direction: column;
-    align-items: center;
+    gap: 1rem;
+  }
+  
+  nav .flex {
+    flex-wrap: wrap;
     justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+    gap: 1rem;
+  }
 }
 
-.App-link {
-    color: #61dafb;
+/* Loading and transition states */
+.fade-enter {
+  opacity: 0;
+  transform: translateY(30px);
 }
 
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+.fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
+
+/* Interactive elements */
+.interactive-element {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.interactive-element:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+/* Gaming UI elements */
+.game-ui-element {
+  border: 3px solid #000;
+  background: linear-gradient(135deg, #ffffff, #e5e7eb);
+  box-shadow: 
+    inset -2px -2px 0px rgba(0,0,0,0.2),
+    inset 2px 2px 0px rgba(255,255,255,0.8),
+    0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Button states */
+.game-button {
+  position: relative;
+  background: linear-gradient(135deg, #10b981, #059669);
+  border: 3px solid #000;
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px 0px rgba(0,0,0,0.5);
+  transform: translateY(0);
+  transition: all 0.1s ease;
+}
+
+.game-button:hover {
+  background: linear-gradient(135deg, #34d399, #10b981);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.game-button:active {
+  transform: translateY(0);
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Form styling */
+.retro-form input,
+.retro-form textarea {
+  background: #ffffff;
+  border: 3px solid #374151;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.retro-form input:focus,
+.retro-form textarea:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  outline: none;
+}
+
+/* Animation delays for staggered effects */
+.stagger-1 { animation-delay: 0.1s; }
+.stagger-2 { animation-delay: 0.2s; }
+.stagger-3 { animation-delay: 0.3s; }
+.stagger-4 { animation-delay: 0.4s; }
