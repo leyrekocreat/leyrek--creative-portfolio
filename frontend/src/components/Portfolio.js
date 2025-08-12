@@ -294,10 +294,10 @@ const Portfolio = () => {
           {/* Process Timeline - Gaming Style Icons */}
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-16">
             {[
-              { title: 'Ideation', desc: 'Cultivating innovative concepts that captivate audiences', icon: '🧠', color: 'from-blue-600 to-purple-600' },
-              { title: 'Production', desc: 'Bringing visions to life through skilled execution', icon: '⚡', color: 'from-green-600 to-blue-600' },
-              { title: 'Strategy', desc: 'Developing targeted solutions aligned with objectives', icon: '🎯', color: 'from-orange-600 to-red-600' },
-              { title: 'Analytics', desc: 'Leveraging data insights to optimize success', icon: '📊', color: 'from-purple-600 to-pink-600' }
+              { title: 'Ideation', desc: 'Cultivating innovative concepts that captivate audiences', icon: '🎨', color: 'from-blue-600 to-purple-600' },
+              { title: 'Production', desc: 'Bringing visions to life through skilled execution', icon: '⚔️', color: 'from-green-600 to-blue-600' },
+              { title: 'Strategy', desc: 'Developing targeted solutions aligned with objectives', icon: '🏰', color: 'from-orange-600 to-red-600' },
+              { title: 'Analytics', desc: 'Leveraging data insights to optimize success', icon: '📈', color: 'from-purple-600 to-pink-600' }
             ].map((step, index) => (
               <div key={index} className={`gaming-element modern-card bg-gradient-to-br ${step.color} border border-gray-700 transform hover:scale-105 transition-all`}>
                 <div className="p-6 text-center">
