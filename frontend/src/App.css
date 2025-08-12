@@ -91,14 +91,15 @@ body.submitting-form {
 .creative-back-button {
   background: linear-gradient(135deg, #f59e0b, #d97706, #92400e);
   color: white;
-  padding: 12px 24px;
+  padding: 14px 32px;
   border: none;
-  border-radius: 8px;
+  border-radius: 12px;
   font-weight: bold;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
+  box-shadow: 0 6px 20px rgba(245, 158, 11, 0.4);
   position: relative;
   overflow: hidden;
+  clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 100%, 20px 100%);
 }
 
 .creative-back-button::before {
