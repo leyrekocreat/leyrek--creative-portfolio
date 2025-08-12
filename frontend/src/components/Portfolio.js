@@ -455,9 +455,9 @@ const Portfolio = () => {
             <div className="modern-card bg-gradient-to-r from-yellow-600/20 to-orange-600/20 border border-yellow-600/30 mt-8">
               <div className="p-6">
                 <h4 className="text-2xl font-bold mb-4 minecraft-font text-white">Power-Up Preferences</h4>
-                <div className="grid grid-cols-4 md:grid-cols-8 gap-4 text-center">
-                  {['🍦 Ice Creams', '🍺 Beer', '🌮 Street Food', '🐕 Dogs', '🦜 Parrots', '🦍 Gorillas', '🌱 Gardening', '🎮 Gaming'].map((like, i) => (
-                    <div key={i} className="text-sm font-semibold text-yellow-400">{like}</div>
+                <div className="grid grid-cols-4 md:grid-cols-7 gap-4 text-center">
+                  {['🍦 Ice Creams', '🌮 Street Food', '🐕 Dogs', '🦜 Parrots', '🦍 Gorillas', '🌱 Gardening', '🎮 Gaming'].map((like, i) => (
+                    <div key={i} className="text-sm font-semibold text-yellow-400 minecraft-font">{like}</div>
                   ))}
                 </div>
               </div>
