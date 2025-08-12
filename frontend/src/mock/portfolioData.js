@@ -334,14 +334,10 @@ export const skillsData = {
   ],
   
   software: [
-    "Adobe Photoshop",
-    "Adobe Illustrator", 
-    "Adobe InDesign",
-    "Adobe Premiere Pro",
-    "Adobe After Effects",
-    "Cinema 4D / Maya",
-    "Adobe Dimension",
-    "Figma"
+    "Photoshop | Illustrator | Indesign | Figma | Canva",
+    "Premiere Pro | After Effects | Media Encoder", 
+    "Autodesk Maya | C4D | Blender | Dimension",
+    "*Modelling | Illumination | Rendering"
   ],
   
   aiTools: [
