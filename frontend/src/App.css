@@ -25,9 +25,9 @@ body.submitting-form {
 
 /* Minecraft-style font for navigation and headers */
 .minecraft-font {
-  font-family: 'Orbitron', monospace;
-  font-weight: 700;
-  letter-spacing: 2px;
+  font-family: 'Press Start 2P', 'Orbitron', monospace;
+  font-weight: 400;
+  letter-spacing: 1px;
   text-transform: uppercase;
 }
 
