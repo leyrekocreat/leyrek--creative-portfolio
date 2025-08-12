@@ -310,11 +310,13 @@ export const skillsData = {
     "Creative Direction",
     "Marketing Strategy", 
     "Leadership",
+    "Resilience",
+    "Adaptability",
     "Branding & Identity",
     "ASO Optimization",
     "Team Collaboration",
     "Project Management",
-    "Target-Driven Results"
+    "Result-Driven Results"
   ],
   
   personality: [
