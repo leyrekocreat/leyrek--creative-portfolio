@@ -410,16 +410,15 @@ const Portfolio = () => {
                 </div>
               </div>
 
-              <div className="md:col-span-5 gaming-element modern-card bg-gradient-to-br from-green-600 to-green-800 border border-green-500">
+              <div className="md:col-span-5 gaming-element modern-card bg-gradient-to-br from-green-600 to-green-800 border border-green-500" style={{width: '110%'}}>
                 <div className="p-6">
                   <h4 className="text-xl font-bold text-white mb-4 minecraft-font">Weapons Arsenal</h4>
                   <div className="space-y-2 text-white/90">
                     {[
-                      'Photoshop | Illustrator | Indesign', 
-                      'Figma | Canva',
+                      'Photoshop | Illustrator | Indesign | Figma | Canva', 
                       'Premiere Pro | After Effects | Media Encoder',
                       'Autodesk Maya | C4D | Blender | Dimension',
-                      'Modelling | Illumination | Rendering'
+                      '*Modelling | Illumination | Rendering'
                     ].map((tool, i) => (
                       <div key={i} className="text-sm flex items-center">
                         <span className="text-green-400 mr-2">▶</span>
