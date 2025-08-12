@@ -363,7 +363,6 @@ export const skillsData = {
 
 export const personalLikes = [
   { item: "Ice Creams", emoji: "🍦" },
-  { item: "Beer", emoji: "🍺" },
   { item: "Street Food", emoji: "🌮" },
   { item: "Dogs", emoji: "🐕" }, 
   { item: "Parrots", emoji: "🦜" },
