@@ -320,14 +320,15 @@ export const skillsData = {
   personality: [
     "Team Player",
     "Organized",
-    "Target Driven", 
+    "Result Driven", 
     "Reliable",
     "Detail Oriented",
     "Proactive",
     "Problem Solver",
     "Adaptable",
     "Strong Work Ethic",
-    "Leadership"
+    "Leadership",
+    "Resilience"
   ],
   
   software: [
